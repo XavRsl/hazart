@@ -1,0 +1,25 @@
+%section.accueil
+  %header
+    %hgroup
+      %h1 Hazart
+      %h2 Duo acoustic Folk/Rock
+  %div#mainNAV.band
+    %ul
+      %li
+        %a{:href=>""} Accueil
+      %li
+        %a{:href=>""} Concerts
+      %li
+        %a{:href=>""} Photos/Vidéos
+      %li
+        %a{:href=>""} Contacts
+  %div#ecusson
+  
+  %div.bg
+    %div.alain.clearfix
+      %span.musician.band Alain Dietrichs
+      %span.instrument à la guitare
+    %div.maite.clearfix
+      %span.musician.band Maïté Vilar
+      %span.instrument au chant
+  %footer

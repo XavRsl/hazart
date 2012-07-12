@@ -1,0 +1,8 @@
+/* Author:
+
+*/
+
+
+$('.bg').anystretch("../img/big.png", {speed: 150});
+
+

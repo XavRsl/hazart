@@ -1,0 +1,26 @@
+%section.accueil
+  %header
+    %hgroup
+      %h1 Hazart
+      %h2 Duo acoustic Folk/Rock
+  %div#mainNAV.band
+    %ul
+      %li
+        %a{:href=>""} Accueil
+      %li
+        %a{:href=>""} Concerts
+      %li
+        %a{:href=>""} Photos/Vidéos
+      %li
+        %a{:href=>""} Contacts
+  %div#ecusson
+  
+  %figure{:title=> "Hazart", 'data-media600' => "img/big.png", 'data-media440' => "img/big.png", 'data-media' => "img/big.png"}
+    %img{:alt => "Hazart", :src => "img/big.png"}
+    %noscript &lt;img src="img/big.png" alt="Hazart"&gt;
+    %figcaption Alain Dietrichs
+    %figcaption à la guitare
+    %figcaption Maïte Vilar
+    %figcaption au chant
+
+  %footer

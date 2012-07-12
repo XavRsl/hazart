@@ -1,0 +1,215 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+h1
+  color: #000
+  text-shadow: 0 0 5px rgba(0,0,0,0.5)
+  background: url('../img/HAZART.png') no-repeat scroll
+  background-position: center -90px
+  height: 225px
+
+h2
+  color: #fff
+  position: absolute
+  top: 10px
+  width: 100%
+  text-align: center
+  text-transform: uppercase
+
+section.accueil
+  //height: 120rem
+  margin: 0 auto
+  width: 100%
+
+.band
+  color: black
+  background-color: white
+  line-height: 1.4
+  font-weight: bold
+  text-transform: uppercase
+  position: absolute
+
+#mainNav.accueil, #mainNav.concerts
+  +nav()
+
+#mainNav.photos-videos
+  +nav(black, white)
+
+#mainNav
+  width: 80%
+  left: 20%
+  font-weight: 500
+  z-index: 999998
+  line-height: 1.4
+  font-weight: bold
+  text-transform: uppercase
+  position: relative
+  float: left
+#mainNav.mainNav-fixed
+  position: fixed
+  top: 0
+  background-image: url('../img/hazartNav.png') 
+  background-position: top right 
+  background-repeat: no-repeat
+#mainNav.mainNav-fixed.photos-videos
+  background-image: none
+
+  .back
+    position: relative
+    margin-right: 10px
+    float: right
+    width: 100px
+    height: 20px
+    line-height: 1.4
+    z-index: 999999Ò
+
+#ecusson
+  background: url('../img/ecusson.png') no-repeat
+  position: absolute
+  max-height: 160px
+  max-width: 160px
+  height: 100%
+  width: 100%
+  left: 75%
+  top: 150px
+  z-index: 999999
+
+figure.responsive
+  width: 100%
+  margin: 0 auto
+  max-width: 1024px
+
+figcaption.name
+  font-size: 1.6rem
+  font-size: 16px
+
+.alain
+  +single-box-shadow($alain, 5px, 3px, 0)
+
+.maite
+  +single-box-shadow($maite, -8px, 4px, 0)
+
+figcaption.maite
+  top: 70rem
+  width: 25%
+  right: 0
+  text-align: right
+  padding-right: 10px
+
+figcaption.alain
+  top: 63rem
+  width: 27%
+  left: 0
+  padding-left: 10px
+
+figcaption.instrument
+  color: white
+  background-color: transparent
+  line-height: 1.3
+  font-weight: bold
+  font-size: 1.5rem
+  font-size: 15px
+  text-transform: uppercase
+  position: absolute
+
+.guitare
+  top: 65.5rem
+  left: 0
+  padding-left: 10px
+
+.chant
+  top: 72.5rem
+  padding-right: 10px
+  right: 0
+
+section
+  +clearfix
+  max-width: 1440px
+  margin: 0 auto
+
+.accueil
+  footer
+    width: 80%
+    float: right
+    position: relative
+    background-color: transparent
+    margin: 20px 0 30px 0
+    p
+      +font-size()
+      text-transform: none
+      background-color: white
+      font-weight: normal
+      font-style: italic
+      //margin-bottom: 30px
+      padding: 8px 6px 13px 23px
+      text-align: justify
+      +single-box-shadow($alain, -5px, 5px, 0)
+    &::after
+      position: absolute
+      content: '❝'
+      font-size: 80px
+      font-size: 8.0rem
+      color: $maite
+      right: 20px
+      top: 70px
+      
+    &::before
+      position: absolute
+      content: '❞'
+      font-size: 80px
+      font-size: 8.0rem
+      color: $maite
+      top: -60px
+      
+
+.concerts
+  .test
+    width: 100%
+    max-width: 1440px
+    margin: 0 auto
+    display: block
+    div
+      background: rgba(255,255,255,0.6) 
+      border: none 
+      margin: 10%
+      height: 100rem
+      padding: 6% 2%
+      overflow: auto
+      img
+        max-width: none
+
+.multimedia
+  background: url('../img/whiteBG.png') transparent repeat
+  h3
+    padding: 100px 0px 0px 0px 
+    margin-bottom: -6px
+    text-transform: uppercase
+    width: 99%
+    background-repeat: no-repeat
+  h3#photoGal
+    background-image: url('../img/Camera.png')
+    background-position: 90% 60px
+  h3#videoGal
+    background-image: url('../img/Television.png') 
+    background-position: 10% 60px
+    text-align: right
+  .photos
+    height: 85%
+    width: 100%
+  img
+    width: initial
+    margin: 5px
+  .bck
+    width: 80%
+    height: 90%
+    background-color: black
+  .videos
+    .bck
+      float: right
+    
+      
